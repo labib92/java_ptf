@@ -15,7 +15,7 @@ public class GroupHelper extends HelperBase {
 
     }
 
-    public void fillGroupForm(GroupData groupData) {
+    public void  fillGroupForm(GroupData groupData) {
         type(By.name("group_name"), groupData.getName());
         type(By.name("group_header"), groupData.getHeader());
         driver.findElement(By.name("group_footer")).clear();
